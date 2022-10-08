@@ -23,9 +23,20 @@ package com.designpattern.structural.ejercicios_6_7_8;
 //     incluidos cachés, grupos de subprocesos y registros.
 //
 //    Es trivial iniciar un objeto de una clase, pero ¿cómo nos aseguramos
-//    de que solo se cree un objeto? La respuesta es hacer que el constructor sea "privado" para la clase que pretendemos definir como singleton. De esa forma, solo los miembros de la clase pueden acceder al constructor privado y nadie más.
+//    de que solo se cree un objeto? La respuesta es hacer que el constructor
+//    sea "privado" para la clase que pretendemos definir como singleton.
+//    De esa forma, solo los miembros de la clase pueden acceder al
+//    constructor privado y nadie más.
 //
-//    Consideración importante: es posible subclasificar un singleton haciendo que el constructor esté protegido en lugar de privado. Esto podría ser adecuado en algunas circunstancias. Un enfoque adoptado en estos escenarios es crear un registro de singletons de las subclases y el método getInstance puede tomar un parámetro o usar una variable de entorno para devolver el singleton deseado. Luego, el registro mantiene una asignación de nombres de cadenas a objetos singleton, a los que se puede acceder según sea necesario.
+//    Consideración importante: es posible subclasificar un singleton
+//    haciendo que el constructor esté protegido en lugar de privado.
+//    Esto podría ser adecuado en algunas circunstancias.
+//    Un enfoque adoptado en estos escenarios es crear un registro de
+//    singletons de las subclases y el método getInstance puede tomar un
+//    parámetro o usar una variable de entorno para devolver el singleton
+//    deseado. Luego, el registro mantiene una asignación de nombres de
+//    cadenas a objetos singleton, a los que se puede acceder según sea
+//    necesario.
 //
 //    3.Observer
 //    Este patrón es una dependencia de uno a muchos entre objetos, de modo
