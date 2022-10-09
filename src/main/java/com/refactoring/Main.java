@@ -12,12 +12,8 @@ public class Main {
         int menor = numeros[0];
 
         for (int i = 0; i < numeros.length; i++) {
-            if (mayor < numeros[i]) {
-                mayor = numeros[i];
-            }
-            if (numeros[i] < menor) {
-                menor = numeros[i];
-            }
+            mayor = mayor < numeros[i] ? numeros[i] : mayor;
+            menor = menor > numeros[i] ? numeros[i] : menor;
         }
 
         System.out.println("Mayor: " + mayor + " Menor: " + menor);
