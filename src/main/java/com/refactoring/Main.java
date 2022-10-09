@@ -7,10 +7,25 @@ public class Main {
 //        int[] numeros = {12, 23, 45, 1, 9, 0, -4};
 //        imprimeMayorYMenor(numeros);
 
-        ConstructorLargo myCar = new ConstructorLargo("Renault", "Megan", "Nafta", 5);
-        ConstructorLargoBuilder myCar2 = new ConstructorLargoBuilder("Fiat").conModelo("Punto").conMotor("Gasoil").conPuertas(4);
+//        ConstructorLargo myCar = new ConstructorLargo("Renault", "Megan", "Nafta", 5);
+//        ConstructorLargoBuilder myCar2 = new ConstructorLargoBuilder("Fiat").conModelo("Punto").conMotor("Gasoil").conPuertas(4);
+
+
+
+
 
     }
+
+    public boolean hoyEsDomingo(int numero){
+        boolean isDomingo = (numero == 7) ? true : false;
+        if(isDomingo){
+            System.out.println(isDomingo);
+        }
+
+        return isDomingo;
+    }
+
+
 
     public static void imprimeMayorYMenor(int[] numeros) {
         int mayor = Arrays.stream(numeros).reduce(0, (a, b) -> (a > b) ? a : b);
