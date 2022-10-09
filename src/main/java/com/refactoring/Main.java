@@ -11,7 +11,7 @@ public class Main {
 
     public static void imprimeMayorYMenor(int[] numeros) {
         int mayor = Arrays.stream(numeros).reduce(0, (a, b) -> (a > b) ? a : b );
-        int menor = Arrays.stream(numeros).reduce(0, (a, b) -> (a < b) ? a : b );
+        int menor = Arrays.stream(numeros).reduce(numeros[0], (a, b) -> (a < b) ? a : b );
 
         System.out.println("Mayor: " + mayor + " Menor: " + menor);
     }
