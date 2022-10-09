@@ -8,7 +8,7 @@ public class Main {
 //        imprimeMayorYMenor(numeros);
 
         ConstructorLargo myCar = new ConstructorLargo("Renault", "Megan", "Nafta", 5);
-
+        ConstructorLargoBuilder myCar2 = new ConstructorLargoBuilder("Fiat").conModelo("Punto").conMotor("Gasoil").conPuertas(4);
 
     }
 
