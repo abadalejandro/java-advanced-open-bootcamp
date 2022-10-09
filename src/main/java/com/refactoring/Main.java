@@ -14,8 +14,9 @@ public class Main {
     }
 
     public boolean esOracleJavaEnMacOS() {
-        if (System.getProperty("java.runtime.name").contains("Oracle")
-                && System.getProperty("os.version").compareTo("11.6") == 0){
+        boolean runtimeOracle = System.getProperty("java.runtime.name").contains("Oracle");
+        boolean osVersion = System.getProperty("os.version").compareTo("11.6") == 0;
+        if (runtimeOracle && osVersion) {
             return true;
         }
         return false;
