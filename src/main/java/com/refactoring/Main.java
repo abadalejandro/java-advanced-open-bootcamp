@@ -11,20 +11,24 @@ public class Main {
 //        ConstructorLargoBuilder myCar2 = new ConstructorLargoBuilder("Fiat").conModelo("Punto").conMotor("Gasoil").conPuertas(4);
 
 
-
-
-
     }
 
-    public boolean hoyEsDomingo(int numero){
+    public boolean esOracleJavaEnMacOS() {
+        if (System.getProperty("java.runtime.name").contains("Oracle")
+                && System.getProperty("os.version").compareTo("11.6") == 0){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean hoyEsDomingo(int numero) {
         boolean isDomingo = (numero == 7) ? true : false;
-        if(isDomingo){
+        if (isDomingo) {
             System.out.println(isDomingo);
         }
 
         return isDomingo;
     }
-
 
 
     public static void imprimeMayorYMenor(int[] numeros) {
