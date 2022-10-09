@@ -11,9 +11,9 @@ public class Main {
         int mayor = 0;
         int menor = numeros[0];
 
-        for (int i = 0; i < numeros.length; i++) {
-            mayor = mayor < numeros[i] ? numeros[i] : mayor;
-            menor = menor > numeros[i] ? numeros[i] : menor;
+        for (int i : numeros) {
+            mayor = mayor < i ? i : mayor;
+            menor = menor > i ? i : menor;
         }
 
         System.out.println("Mayor: " + mayor + " Menor: " + menor);
