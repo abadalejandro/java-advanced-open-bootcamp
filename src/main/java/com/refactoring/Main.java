@@ -9,11 +9,11 @@ public class Main {
 
 //        ConstructorLargo myCar = new ConstructorLargo("Renault", "Megan", "Nafta", 5);
 //        ConstructorLargoBuilder myCar2 = new ConstructorLargoBuilder("Fiat").conModelo("Punto").conMotor("Gasoil").conPuertas(4);
-
+//        esOracleJavaEnMacOS();
 
     }
 
-    public boolean esOracleJavaEnMacOS() {
+    public static boolean esOracleJavaEnMacOS() {
         boolean runtimeOracle = System.getProperty("java.runtime.name").contains("Oracle");
         boolean osVersion = System.getProperty("os.version").compareTo("11.6") == 0;
         if (runtimeOracle && osVersion) {
