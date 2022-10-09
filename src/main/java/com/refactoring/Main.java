@@ -10,20 +10,21 @@ public class Main {
     }
 
     public static void imprimeMayorYMenor(int[] numeros) {
-        int mayor = Arrays.stream(numeros).reduce(0, (a, b) -> (a > b) ? a : b );
-        int menor = Arrays.stream(numeros).reduce(numeros[0], (a, b) -> (a < b) ? a : b );
+        int mayor = Arrays.stream(numeros).reduce(0, (a, b) -> (a > b) ? a : b);
+        int menor = Arrays.stream(numeros).reduce(numeros[0], (a, b) -> (a < b) ? a : b);
 
         System.out.println("Mayor: " + mayor + " Menor: " + menor);
     }
 
-    public static int ifAnidado1(){
+    public static int ifAnidado1() {
         int valor1 = 10;
         int valor2 = 10;
-        if(valor1 > valor2){
+        if (valor1 > valor2) {
             return valor1;
-        }else{
-            return valor2;
         }
+
+        return valor2;
+
     }
 
 }
