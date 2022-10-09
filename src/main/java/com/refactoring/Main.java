@@ -4,9 +4,12 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numeros = {12, 23, 45, 1, 9, 0, -4};
+//        int[] numeros = {12, 23, 45, 1, 9, 0, -4};
+//        imprimeMayorYMenor(numeros);
 
-        imprimeMayorYMenor(numeros);
+        ConstructorLargo myCar = new ConstructorLargo("Renault", "Megan", "Nafta", 5);
+
+
     }
 
     public static void imprimeMayorYMenor(int[] numeros) {
